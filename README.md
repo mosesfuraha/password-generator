@@ -11,6 +11,10 @@ I developed this app to create random passwords and evaluate their strength, ind
 - **Interactive Elements**: I focused on providing a user-friendly experience with intuitive controls and real-time feedback.
 - **Modern JavaScript (ES6+)**: I utilized modern JavaScript features for cleaner, more efficient code.
 
+## Deployed Link
+
+You can check out the deployed application [here](https://passw0rd-generator01.netlify.app/).
+
 ## Screenshots
 
 ### 1. Large Screens
@@ -101,5 +105,3 @@ Feel free to contribute by creating pull requests or opening issues for any bugs
 ## License
 
 This project is licensed under the MIT License.
-
----
