@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="password.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Password Generator</h1>
+      <div class="inputBox">
+        <input
+          type="text"
+          class="passBox"
+          id="passBox"
+          disabled
+          placeholder=" P4$WOrD !"
+        />
+        <span class="material-icons" id="copyIcon" style="cursor: pointer"
+          >content_copy</span
+        >
+      </div>
+      <form class="password-content" id="passwordGenerator">
+        <div class="row">
+          <p>Character Length</p>
+          <input type="text" id="sliderValue" value="10" class="styled-input" />
+        </div>
+        <input type="range" min="1" max="50" value="10" id="inputSlider" />
+        <div class="row">
+          <input type="checkbox" name="lowercase" id="lowercase" checked />
+          <label for="lowercase">Include Lowercase Letters</label>
+        </div>
+        <div class="row">
+          <input type="checkbox" name="uppercase" id="uppercase" checked />
+          <label for="uppercase">Include Uppercase Letters</label>
+        </div>
+        <div class="row">
+          <input type="checkbox" name="numbers" id="numbers" checked />
+          <label for="numbers">Include Numbers</label>
+        </div>
+        <div class="row">
+          <input type="checkbox" name="symbols" id="symbols" checked />
+          <label for="symbols">Include Symbols</label>
+        </div>
+        <div class="strength-row">
+          <span class="str-txt">Strength</span>
+          <span class="mdm-txt">MEDIUM</span>
+          <div class="strength-indicator">
+            <div class="strength-bar filled"></div>
+            <div class="strength-bar filled"></div>
+            <div class="strength-bar filled"></div>
+            <div class="strength-bar empty"></div>
+          </div>
+        </div>
+        <button type="submit" class="genBtn" id="genBtn">
+          Generate Password
+          <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="#24232C"
+              d="m5.106 12 6-6-6-6-1.265 1.265 3.841 3.84H.001v1.79h7.681l-3.841 3.84z"
+            />
+          </svg>
+        </button>
+      </form>
+    </div>
+    <script src="password.js"></script>
+  </body>
+</html>
